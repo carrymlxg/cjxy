@@ -27,6 +27,9 @@
         padding: 26px 0 0 10px;
         box-sizing: border-box;
     }
+    .navbar-default .navbar-nav>li>a,.topadd a{
+        color:#414141;
+    }
 </style>
 <body>
 <!--TOP栏-->
@@ -42,20 +45,28 @@
     </div>
 </nav>
 
-<nav class="navbar  navbar-inverse mainadd">
+<nav class="navbar  navbar-default mainadd">
     <div class="container">
-        <div class="navbar-header">
+        <div class="navbar-header col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <a class="navbar-brand" href="#"><img src="../img/2.png" alt="logo" class="img-responsive" ></a>
         </div>
-        <div class="zongzhi"></div>
+        <div class="zongzhi col-lg-6 col-md-6 hidden-sm hidden-xs">
+            <div class="col-lg-4 col-md-4">
+                <p>技能為重</p>
+                <p>道德為先</p>
+            </div>
+            <div class="col-lg-8 col-md-8">
+                <img src="../img/zongzhi.png" alt="学校宗旨">
+                <img src="../img/xian.png" alt="">
+            </div>
+        </div>
     </div>
-
 </nav>
 
 <!--主菜单栏-->
 
 <!--TOP栏-->
-<nav class="navbar  navbar-inverse topadd">
+<nav class="navbar  navbar-default topadd">
     <div class="container">
         <div class="navbar-header">
             <buttom type="buttom" class="navbar-toggle collapsed" data-loggle="collapse">
@@ -81,9 +92,9 @@
 </nav>
 
 <!------ Slider ------------>
-<img src="../img/banner.jpg" alt="" style="width: 1170px;height: 300px;margin: 10px auto;display: block">
+<img src="../img/banner2.jpg" alt="" style="width: 100%;margin: 0 auto 10px;display: block; z-index:99">
 <!------End Slider ------------>
-<nav class="navbar  navbar-inverse topadd">
+<nav class="navbar  navbar-default topadd">
 <div class="container">
     <div class="row">
 
@@ -170,7 +181,6 @@
             $('.iframe2').fadeToggle("slow", "linear");
         });
         $($('.navbar-inverse')[3]).css("backgroundColor",'#fff')
-        $($('.navbar-header')[2]).css("backgroundColor",'#222')
         $('#iframe3').height($('#iframe3').contents().find("body").height()+20+'px')
         $('#iframe3').load(function () {
             var h = $('#iframe3').contents().find("body").height()+20+'px';
