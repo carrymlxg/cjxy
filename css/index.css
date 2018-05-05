@@ -186,6 +186,8 @@ height: 150px;
 }
 .tzggbox{
     height: 362px;
+    padding: 6px;
+    box-sizing: border-box;
 }
 ul.tzgg{
     height: 246px;
@@ -240,7 +242,7 @@ h3,.lanmu{
 }
 .newsbox{
     width: 100%;
-
+height: 350px;
     overflow: hidden;
 }
 .ad{
@@ -458,9 +460,6 @@ img.banner{
     img.banner{
         width: 1200px;
         height: 300px;
-    }
-    .newsbox{
-        height: 350px;
     }
     .jthbx{
         padding-left: 0;
