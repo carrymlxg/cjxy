@@ -476,6 +476,9 @@ img.banner{
     }
 }
 @media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
     dl dd{
         float: left;
         margin-right: 10px;
@@ -497,5 +500,8 @@ img.banner{
     }
     .jthbx{
         padding:0 5px;
+    }
+    .container>.navbar-header {
+        margin: 0;
     }
 }
