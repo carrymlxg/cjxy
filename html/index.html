@@ -12,6 +12,7 @@
     <script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
     <script type="text/javascript" src="../js/jquery.nivo.slider.js"></script>
 	<script type="text/javascript" src="../js/index.js"></script>
+	<script type="text/javascript" src="../js/lunbo.js"></script>
 </head>
 <style>
 	.navbar{
@@ -20,9 +21,8 @@
 	.slider{
 		margin-bottom: 20px;
 	}
-
-	.navbar-default .navbar-nav>li>a,.topadd a{
-		color:#414141;
+	.navbar-default .navbar-nav>li>a,.topadd a {
+		color: #414141;
 	}
 </style>
 <body>
@@ -39,28 +39,25 @@
 		</ul>
 	</div>
 </nav>
-
+<!--logo-->
 <nav class="navbar  navbar-default mainadd">
 	<div class="container">
 		<div class="navbar-header col-lg-6 col-md-6 col-sm-12 col-xs-12">
 			<a class="navbar-brand" href="#"><img src="../img/2.png" alt="logo" class="img-responsive" ></a>
 		</div>
 		<div class="zongzhi col-lg-6 col-md-6 hidden-sm hidden-xs">
-			<div class="col-lg-4 col-md-4">
-				<p>技能為重</p>
-				<p>道德為先</p>
-			</div>
 			<div class="col-lg-8 col-md-8">
-				<img src="../img/zongzhi.png" alt="学校宗旨">
-				<img src="../img/xian.png" alt="">
+				<img src="../img/u212.png" alt="">
+				<img src="../img/u216.png" alt="">
+			</div>
+			<div class="col-lg-4 col-md-4">
+				<img src="../img/u218.png" alt="">
+				<img src="../img/u44.png" alt="">
 			</div>
 		</div>
 	</div>
 </nav>
-
-<!--主菜单栏-->
-
-	<!--TOP栏-->
+<!--导航栏-->
 <nav class="navbar  navbar-default topadd">
 	<div class="container">
 		<div class="navbar-header">
@@ -85,87 +82,109 @@
 		</ul>
 	</div>
 </nav>
-
-		<!------ Slider ------------>
-		  <div class="slider">
-	      	<div class="slider-wrapper theme-default">
-	            <div id="slider" class="nivoSlider">
-	                <img src="../img/banner2.jpg" data-thumb="../img/1.jpg" alt="" />
-	                <img src="../img/banner1.jpg" data-thumb="../img/2.jpg" alt="" />
-	                <img src="../img/banner3.jpg" data-thumb="../img/3.jpg" alt="" />
-	                <img src="../img/banner4.jpg" data-thumb="../img/4.jpg" alt="" />
-	                <img src="../img/banner.jpg" data-thumb="../img/5.jpg" alt="" />
-	            </div>
-	        </div>
-   		</div>
-		<!------End Slider ------------>
+<!------ Banner,轮播 ------------>
+<div class="slider">
+	<div class="slider-wrapper theme-default">
+		<div id="slider" class="nivoSlider">
+			<img src="../img/banner2.jpg" data-thumb="../img/1.jpg" alt="" />
+			<img src="../img/banner1.jpg" data-thumb="../img/2.jpg" alt="" />
+			<img src="../img/banner3.jpg" data-thumb="../img/3.jpg" alt="" />
+			<img src="../img/banner4.jpg" data-thumb="../img/4.jpg" alt="" />
+			<img src="../img/banner.jpg" data-thumb="../img/5.jpg" alt="" />
+		</div>
+	</div>
+</div>
 <!--新闻栏-->
 <div class="container">
-
 	<div class="row">
-	    <div class="col-md-8" style="padding-right:5px;padding-left:5px" >
+		<!--图片新闻-->
+	    <div class="col-md-7" style="padding-right:5px;padding-left:5px" >
 			<div class="panel panel-default">
+				<!--图片新闻头部-->
 				<div class="panel-heading"  style="border-bottom: 4px solid #286090;">
 					<h3 class="panel-title news"><i class="fa fa-camera-retro" aria-hidden="true"></i>     图片新闻<a class="moreadd">更多...</a>    </h3>
 				</div>
-				<a href="#" class="col-md-6" style="padding: 0;height: 250px"><img src="../img/img2.jpg" class="img-responsive center-block" style=" padding:6px;width: 100%;height: 100%" alt="俄攀高狂人偷爬在建中国第一高楼"></a>
-				<div class="col-md-6">
-					<div style="padding: 20px 0;border-bottom: 1px dashed rgb(121,121,121)">
-						<a href="" style="color: rgb(0,0,153);line-height: 20px">2017年5月10号校园技能大赛全面开赛</a>
-						<p>
-							第三个“职业教育活动周”的第三天，我校校园技能大赛全面开赛，此次技能大赛比赛范围和竞赛项目为本学期各专业...
-						</p>
-					</div>
-					<div style="padding: 20px 0">
-						<a href="" style="color: rgb(0,0,153);line-height: 20px">2017年5月10号校园技能大赛全面开赛</a>
-						<p>
-							第三个“职业教育活动周”的第三天，我校校园技能大赛全面开赛，此次技能大赛比赛范围和竞赛项目为本学期各专业...
-						</p>
+				<!--图片新闻内容-->
+				<div class="panel-body " style="padding:6px" >
+					<div class="newsbox" >
+						<div class="ad">
+							<ul class="newsimg">
+								<!--图片新闻链接-->
+								<li><a href="">
+									<!--图片新闻题目，摘要-->
+									<p>1111111</p>
+									<img src="../img/news1.jpg" alt=""></a></li>
+								<li><a href="">
+									<p>22222222</p>
+									<img src="../img/news2.jpg" alt=""></a></li>
+								<li><a href="">
+									<p>333333333</p>
+									<img src="../img/news3.jpg" alt=""></a></li>
+								<li><a href="">
+									<p>1111111</p>
+									<img src="../img/news1.jpg" alt=""></a></li>
+							</ul>
+							<!--图片新闻轮播点-->
+							<ol>
+								<li>1</li>
+								<li>2</li>
+								<li>3</li>
+							</ol>
+						</div>
 					</div>
 				</div>
 	    	</div>
-
-	  </div>
-	  <div class="col-md-4" style="padding-right:5px;padding-left:5px" >
+	  	</div>
+		<!--通知公告-->
+	  	<div class="col-md-5" style="padding-right:5px;padding-left:5px" >
 			<div class="panel panel-default">
-				<div class="panel-heading"  style="border-bottom: 4px solid #286090;">
-					<h3 class="panel-title news"><i class="fa fa-bell" aria-hidden="true"></i>      通知公告<div class="moreadd">更多...</div>    </h3>
+				<!--通知公告头部-->
+				<div class="panel-heading"  style="border-bottom: 4px solid rgba(231, 76, 60, 1);">
+					<h3 class="panel-title news" style="color: #CA4234"><i class="fa fa-bell" aria-hidden="true"></i>      通知公告<div class="moreadd">更多...</div>    </h3>
 				</div>
-			<div class="panel-body " style="padding:6px" >
-				<ul class="list-group tzgg   ">
-				  <li class="list-group-item">
-					  <a href="">组织部</a>
-				  </li>
-				  <li class="list-group-item">
-					  <a href="">教务处</a>
-				  </li>
-				  <li class="list-group-item">
-					  <a href="">后勤部</a>
-				  </li>
-				  <li class="list-group-item">
-					  <a href="">宣传部</a>
-				  </li>
-				  <li class="list-group-item">
-					  <a href="">人事处</a>
-				  </li>
-				  <li class="list-group-item">
-					  <a href="">保卫处</a>
-				  </li>
+				<!--通知公告内容-->
+				<div class="panel-body tzggbox" style="padding:6px" >
+					<ul class="list-group tzgg   ">
+				 	 <li class="list-group-item">
+						 <!--通知公告的链接-->
+					  	<a href=""> 新生读者借阅证办理的通知</a>
+				  	</li>
+				  	<li class="list-group-item">
+					  	<a href="">关于开展运城市财经学校“读书月活</a>
+				  	</li>
+				  	<li class="list-group-item">
+					  <a href="">2017年5月10号校园技能大赛全面开赛</a>
+				  	</li>
+				  	<li class="list-group-item">
+					  <a href="">关于开展“弘扬雷锋精神，争做时代</a>
+				  	</li>
+				  	<li class="list-group-item">
+					  <a href="">关于开展青年志愿者服务系列活动的通知</a>
+				  	</li>
 				</ul>
+					<!--通知公告图片，需要加入链接-->
+				<div class="tzggimg">
+					<div><a href=""><img src="../img/u190.png" alt=""></a></div>
+					<div><a href=""><img src="../img/u190.png" alt=""></a></div>
+				</div>
 			</div>
 		</div>
 	  </div>
 	</div>
-	<div class="row">
+	<div class="row kuaixun">
+		<!--工作快讯-->
 	    <div class="col-md-6" style="padding-right:5px;padding-left:5px" >
-					<div class="panel panel-default">
+			<div class="panel panel-default">
+				<!--工作快讯头部-->
 				<div class="panel-heading"  style="border-bottom: 4px solid #286090;">
 					<h3 class="panel-title news"><i class="fa fa-television" aria-hidden="true"></i>     工作快讯<div class="moreadd">更多...</div>    </h3>
 				</div>
+				<!--工作快讯内容-->
 				<div class="panel-body" style="padding:6px" >
 					<ul class="list-group" style="list-style: none">
 						<li style="border-bottom: 1px dashed rgb(121,121,121);overflow: hidden;padding: 10px;box-sizing: border-box">
-							<div class="date col-lg-2 col-md-2 hidden-sm hidden-xs" style="background-color: rgb(2,93,136);">
+							<!--.date为日期显示-->
+							<div class="date date1 col-lg-2 col-md-2 hidden-sm hidden-xs">
 								<p class="day">12-28</p>
 								<p class="year">2017</p>
 							</div>
@@ -175,7 +194,7 @@
 							</div>
 						</li>
                         <li style="border-bottom: 1px dashed rgb(121,121,121);overflow: hidden;padding: 10px;box-sizing: border-box">
-                            <div class="date col-lg-2 col-md-2 hidden-sm hidden-xs" style="background-color: rgb(2,93,136);">
+                            <div class="date date2 col-lg-2 col-md-2 hidden-sm hidden-xs" >
                                 <p class="day">12-28</p>
                                 <p class="year">2017</p>
                             </div>
@@ -185,7 +204,7 @@
                             </div>
                         </li>
                         <li style="border-bottom: 1px dashed rgb(121,121,121);overflow: hidden;padding: 10px;box-sizing: border-box">
-                            <div class="date col-lg-2 col-md-2 hidden-sm hidden-xs" style="background-color: rgb(2,93,136);">
+                            <div class="date  date3 col-lg-2 col-md-2 hidden-sm hidden-xs" >
                                 <p class="day">12-28</p>
                                 <p class="year">2017</p>
                             </div>
@@ -199,159 +218,175 @@
 	    </div>
 		
 	  </div>
-	  <div class="col-md-6" style="padding-right:5px;padding-left:5px" >
+		<!--校园快讯-->
+	  	<div class="col-md-6" style="padding-right:5px;padding-left:5px" >
 			<div class="panel panel-default">
+				<!--校园快讯头部-->
 				<div class="panel-heading"  style="border-bottom: 4px solid #286090;">
 					<h3 class="panel-title news"><i class="fa fa-soccer-ball-o" aria-hidden="true"></i>      校园快讯<div class="moreadd">更多...</div>    </h3>
 				</div>
-			<div class="panel-body" style="padding:6px" >
-                <ul class="list-group" style="list-style: none">
-                    <li style="border-bottom: 1px dashed rgb(121,121,121);overflow: hidden;padding: 10px;box-sizing: border-box">
-                        <div class="date col-lg-2 col-md-2 hidden-sm hidden-xs" style="background-color: rgb(2,93,136);">
-                            <p class="day">12-28</p>
-                            <p class="year">2017</p>
-                        </div>
-                        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
-                            <a href="" style="display: inline;background-color: #fff;color: rgb(0,0,153);line-height: 20px">歌咏大会 我校师生合唱团取得一等奖的好成绩</a>
-                            <p>12月28日晚，我校师生合唱团到盐湖会堂参加市教育工委“走进新时代，建设大运城，打好教育强市牌”建设大运城打好教育强市牌</p>
-                        </div>
-                    </li>
-                    <li style="border-bottom: 1px dashed rgb(121,121,121);overflow: hidden;padding: 10px;box-sizing: border-box">
-                        <div class="date col-lg-2 col-md-2 hidden-sm hidden-xs" style="background-color: rgb(2,93,136);">
-                            <p class="day">12-28</p>
-                            <p class="year">2017</p>
-                        </div>
-                        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
-                            <a href="" style="display: inline;background-color: #fff;color: rgb(0,0,153);line-height: 20px">歌咏大会 我校师生合唱团取得一等奖的好成绩</a>
-                            <p>12月28日晚，我校师生合唱团到盐湖会堂参加市教育工委“走进新时代，建设大运城，打好教育强市牌”建设大运城打好教育强市牌</p>
-                        </div>
-                    </li>
-                    <li style="border-bottom: 1px dashed rgb(121,121,121);overflow: hidden;padding: 10px;box-sizing: border-box">
-                        <div class="date col-lg-2 col-md-2 hidden-sm hidden-xs" style="background-color: rgb(2,93,136);">
-                            <p class="day">12-28</p>
-                            <p class="year">2017</p>
-                        </div>
-                        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
-                            <a href="" style="display: inline;background-color: #fff;color: rgb(0,0,153);line-height: 20px">歌咏大会 我校师生合唱团取得一等奖的好成绩</a>
-                            <p>12月28日晚，我校师生合唱团到盐湖会堂参加市教育工委“走进新时代，建设大运城，打好教育强市牌”建设大运城打好教育强市牌</p>
-                        </div>
-                    </li>
-                </ul>
+				<!--校园快讯内容-->
+				<div class="panel-body" style="padding:6px" >
+               		 <ul class="list-group" style="list-style: none">
+                    	<li style="border-bottom: 1px dashed rgb(121,121,121);overflow: hidden;padding: 10px;box-sizing: border-box">
+                        	<div class="date date4 col-lg-2 col-md-2 hidden-sm hidden-xs" >
+                            	<p class="day">12-28</p>
+                            	<p class="year">2017</p>
+                        	</div>
+
+                        	<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+								<!--校园快讯的链接-->
+                            	<a href="" style="display: inline;background-color: #fff;color: rgb(0,0,153);line-height: 20px">歌咏大会 我校师生合唱团取得一等奖的好成绩</a>
+								<!--校园快讯的内容，摘要-->
+                            	<p>12月28日晚，我校师生合唱团到盐湖会堂参加市教育工委“走进新时代，建设大运城，打好教育强市牌”建设大运城打好教育强市牌</p>
+                        	</div>
+                   		 </li>
+                    	<li style="border-bottom: 1px dashed rgb(121,121,121);overflow: hidden;padding: 10px;box-sizing: border-box">
+                        	<div class="date date5 col-lg-2 col-md-2 hidden-sm hidden-xs" >
+                            	<p class="day">12-28</p>
+                            	<p class="year">2017</p>
+                        	</div>
+                        	<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                            	<a href="" style="display: inline;background-color: #fff;color: rgb(0,0,153);line-height: 20px">歌咏大会 我校师生合唱团取得一等奖的好成绩</a>
+                            	<p>12月28日晚，我校师生合唱团到盐湖会堂参加市教育工委“走进新时代，建设大运城，打好教育强市牌”建设大运城打好教育强市牌</p>
+                        	</div>
+                    	</li>
+                    	<li style="border-bottom: 1px dashed rgb(121,121,121);overflow: hidden;padding: 10px;box-sizing: border-box">
+                        	<div class="date date6 col-lg-2 col-md-2 hidden-sm hidden-xs" >
+                            	<p class="day">12-28</p>
+                            	<p class="year">2017</p>
+                        	</div>
+                        	<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                           	 	<a href="" style="display: inline;background-color: #fff;color: rgb(0,0,153);line-height: 20px">歌咏大会 我校师生合唱团取得一等奖的好成绩</a>
+                            	<p>12月28日晚，我校师生合唱团到盐湖会堂参加市教育工委“走进新时代，建设大运城，打好教育强市牌”建设大运城打好教育强市牌</p>
+                        	</div>
+                    	</li>
+                	</ul>
 			</div>
 		</div>
 	  </div>
 	</div>
 </div>
-
 <!--专题栏目-->
 <div class="container" style="padding: 0">
 	<div class="row">
-	</div>
-	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0" >
-		<div class="panel panel-default">
-			<div class="panel-heading"  style="border-bottom: 4px solid #286090;">
-					<h3 class="panel-title" style="color: rgb(216,94,60)">专题栏目<div class="moreadd">更多...</div>    </h3>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0" >
+			<div class="panel panel-default">
+			<!--<div class="panel-heading"  style="border-bottom: 4px solid #286090;">-->
+					<!--<h3 class="panel-title" style="color: rgb(216,94,60)">专题栏目<div class="moreadd">更多...</div>    </h3>-->
+		<!--</div>-->
+			<div class="panel-body zzlmlf" style="padding:6px" >
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href=""><img src="../img/11.jpg" alt=""></a></div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href=""><img src="../img/12.jpg" alt=""></a></div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href=""><img src="../img/13.jpg" alt=""></a></div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href=""><img src="../img/10.jpg" alt=""></a></div>
+			</div>
 		</div>
-		<div class="panel-body zzlmlf" style="padding:6px" >
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href=""><img src="../img/11.jpg" alt=""></a></div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href=""><img src="../img/12.jpg" alt=""></a></div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href=""><img src="../img/13.jpg" alt=""></a></div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><a href=""><img src="../img/10.jpg" alt=""></a></div>
 		</div>
 	</div>
 </div>
-<!--集团化办学-->
-<div class="container">
+<!--服务-->
+<div class="container fuwu">
+
 	<div class="row">
+		<!--集团化办学-->
+		<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12" style="padding-right:5px;padding-left:0" >
+			<div class="panel panel-default">
+				<div class="panel-heading"  style="border-bottom: 4px solid #286090;">
+					<h3 class="panel-title lanmu"><i class="glyphicon glyphicon-flag" aria-hidden="true"></i>     集团化办学    </h3>
+			</div>
+			<div class="panel-body" style="padding:6px" >
+				<div style="width: 100%">
+					<img src="../img/u180.png" alt="" style="width: 100%;height: 100%">
+				</div>
+				<div style="height: 100px;padding: 10px;">
+					<p class="smtitle">运城商贸物流职教集团揭牌仪式</p>
+					<span class="smcontent">经过集团筹建工作组的精心筹备和大家的共同努力，运城商贸物流职教经过集团筹建工作组的精心筹备和大家的共同努力 运城商贸物流职教经过集团筹建工作组的精心筹备和大家的共同努力</span>
+				</div>
+			</div>
+		</div>
+
+	</div>
+		<!--链接服务-->
 		<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12" style="padding-right:5px;padding-left:5px" >
 			<div class="panel panel-default">
 				<div class="panel-heading"  style="border-bottom: 4px solid #286090;">
-					<h3 class="panel-title lanmu"><i class="glyphicon glyphicon-flag" aria-hidden="true"></i>     集团化办学<div class="moreadd">更多...</div>    </h3>
-			</div>
-			<div class="panel-body" style="padding:6px" >
-				<ul class="list-group" style="overflow: hidden;height: 222px;">
-					<li class="list-group-item" style="height: 50%;">
-						<a href="" style="color:#0147ee">r荣誉称号</a>
-						<p>saudfhdsbajxbhsagehudfnjsn
-						ds'fiadhsgjsaL</p>
-					</li>
-					<li class="list-group-item" style="height: 50%">
-						<a href="" style="color:#0147ee">r荣誉称号</a>
-						<p>saudfhdsbajxbhsagehudfnjsn
-							ds'fiadhsgjsaL</p>
-					</li>
-					
-				</ul>
-			</div>
-		</div>
-
-	</div>
-	<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12" style="padding-right:5px;padding-left:5px" >
-		<div class="panel panel-default">
-			<div class="panel-heading"  style="border-bottom: 4px solid #286090;">
-				<h3 class="panel-title lanmu"><i class="glyphicon glyphicon-heart" aria-hidden="true"></i>     通知公告<div class="moreadd">更多...</div>    </h3>
-
-		</div>
-		<div class="panel-body" style="padding:6px" >
-			<ul class="list-group" style="overflow: hidden">
-				<li class="list-group-item col-lg-6 col-md-6 col-sm-12 col-xs-12" style="display: flex;justify-content: start">
-				<i class="fa fa-calendar"></i>
-				<div>
-					<span style="font-weight: bold">学校校历</span>
-					<p>欢迎大家共同监督，一起走进新时代，建设新运城，让我们的学校再创佳绩</p>
+					<h3 class="panel-title lanmu"><i class="fa fa-anchor" aria-hidden="true"></i>     链接服务    </h3>
 				</div>
-			</li>
-				<li class="list-group-item col-lg-6 col-md-6 col-sm-12 col-xs-12" style="display: flex;justify-content: start">
-					<i class="fa fa-envelope-o"></i>
-					<div>
-						<span style="font-weight: bold">院长信箱</span>
-						<p>欢迎大家共同监督，一起走进新时代，建设新运城，让我们的学校再创佳绩</p>
+				<div class="panel-body" style="padding:6px" >
+					<div class="ljfw">
+						<p>市各级教育机构:</p>
+						<select name="">
+							<option value=""><a href="http://www.ychlxy.com/">运城护理职业学院</a></option>
+							<option value=""><a href="http://www.ycgsxx.com/index.php">运城关圣旅游学院</a></option>
+							<option value=""><a href="http://www.sxycsf.com/">运城高等师范专科学校</a></option>
+						</select>
 					</div>
-				</li>
-				<li class="list-group-item col-lg-6 col-md-6 col-sm-12 col-xs-12" style="display: flex;justify-content: start">
-					<i class="fa fa-building"></i>
-					<div>
-						<span style="font-weight: bold">省级示范校建设</span>
-						<p>欢迎大家共同监督，一起走进新时代，建设新运城，让我们的学校再创佳绩</p>
+					<div class="ljfw">
+						<p>上级主管部门:</p>
+						<select name="" id="">
+							<!--这里可以加一些选项-->
+							<option value=""><a href="http://www.ycsjyj.com/page/index.asp">运城市教育局</a></option>
+							<option value=""><a href="http://www.sxedu.gov.cn/">山西省教育厅</a></option>
+							<option value=""><a href=""></a></option>
+						</select>
 					</div>
-				</li>
-				<li class="list-group-item col-lg-6 col-md-6 col-sm-12 col-xs-12" style="display: flex;justify-content: start">
-					<i class="fa fa-server"></i>
-					<div>
-						<span style="font-weight: bold">FTP服务</span>
-						<p>欢迎大家共同监督，一起走进新时代，建设新运城，让我们的学校再创佳绩</p>
-					</div>
-				</li>
-			</ul>
+				</div>
+			</div>
+
 		</div>
-	</div>
-</div>
-</div>
-</div>
+		<!--公共服务-->
+		<div class="col-lg-2 lol-md-2 col-sm-12 col-xs-12" style="padding-right:0;padding-left:5px">
+			<div class="panel panel-default">
+				<div class="panel-heading"  style="border-bottom: 4px solid #286090;">
+					<h3 class="panel-title lanmu"><i class="fa fa-heart" aria-hidden="true"></i>     公共服务    </h3>
+				</div>
+				<div class="panel-body ggfw" style="padding:6px" >
+					<a href="">
+						<sapn class="fa fa-video-camera"></sapn>
+						<p>学校校历</p>
+					</a>
+					<a href="">
+						<sapn class="fa fa-envelope-o"></sapn>
+						<p>院长信箱</p>
+					</a>
+					<a href="">
+						<span class="fa fa-fort-awesome"></span>
+						<p>投诉建议</p>
+					</a>
+					<a href="">
+						<sapn class="fa fa-windows"></sapn>
+						<p>FTP服务</p>
+					</a>
+				</div>
+			</div>
+		</div>
 </div>
 </div>
 <!--分享-->
 <section style="background-color: #ccc">
 	<div class="container">
 		<div class="row">
-	<div class="col-lg-4 col-md-4 col-sm-4 hidden-xs logo">
-		<img src="../img/2.png" alt="">
-	</div>
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 fenxiang">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6" style="text-align: center;">
+			<!--学校logo-->
+			<div class="col-lg-4 col-md-4 col-sm-4 hidden-xs logo">
+				<img src="../img/2.png" alt="">
+			</div>
+			<!--分享网站-->
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 fenxiang">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="text-align: center;">
                     <i class="fa fa-qq" aria-hidden="true"></i>
                     <i class="fa fa-weixin"></i>
                 </div>
-
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6" style="text-align: center;">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="text-align: center;">
                     <i class="fa fa-weibo"></i>
                     <i class="fa fa-twitter-square"></i>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-8" >
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" >
                     <img src="../img/erweima.png" alt="">
                 </div>
 			</div>
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+			<!--学校信息-->
+			<div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
 				<dl>
 					<dd>
 						<p>山西运城市财经学校</p>
@@ -370,11 +405,10 @@
 					</dd>
 				</dl>
 			</div>
-	</div>
-
-	</div>
+		</div>
 	</div>
 </section>
+<!--版权信息-->
 <footer style="background-color:#2b669a ">
 	<div class="container">
 		<div class="row">

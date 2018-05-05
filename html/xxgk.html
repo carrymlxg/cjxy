@@ -10,25 +10,30 @@
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/xxgk.css">
     <link rel="stylesheet" href="../css/index.css">
-    <link href="../css/slider.css" rel="stylesheet" type="text/css" media="all"/>
     <script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
     <script type="text/javascript" src="../js/jquery.nivo.slider.js"></script>
     <script src="../js/index.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <style>
     .navbar{
         border-radius: 0;
     }
-    .iframe2{
-        height: 40vh;
-        padding: 10px 0;
+    .navbar,.navbar-default,.topadd{
+        margin: 0;
     }
-    .iframe3{
-        padding: 26px 0 0 10px;
-        box-sizing: border-box;
+    .navbar,.navbar-default,.mainadd{
+        border:none;
     }
-    .navbar-default .navbar-nav>li>a,.topadd a{
-        color:#414141;
+    .topadd:nth-child(3) a{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        line-height: 50px;
+    }
+    .navbar-default .navbar-nav>li>a,.topadd a {
+        color: #414141 !important;
     }
 </style>
 <body>
@@ -51,13 +56,13 @@
             <a class="navbar-brand" href="#"><img src="../img/2.png" alt="logo" class="img-responsive" ></a>
         </div>
         <div class="zongzhi col-lg-6 col-md-6 hidden-sm hidden-xs">
-            <div class="col-lg-4 col-md-4">
-                <p>技能為重</p>
-                <p>道德為先</p>
-            </div>
             <div class="col-lg-8 col-md-8">
-                <img src="../img/zongzhi.png" alt="学校宗旨">
-                <img src="../img/xian.png" alt="">
+                <img src="../img/u212.png" alt="">
+                <img src="../img/u216.png" alt="">
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <img src="../img/u218.png" alt="">
+                <img src="../img/u44.png" alt="">
             </div>
         </div>
     </div>
@@ -90,10 +95,9 @@
         </ul>
     </div>
 </nav>
-
 <!------ Slider ------------>
-<img src="../img/banner2.jpg" alt="" style="width: 100%;margin: 0 auto 10px;display: block; z-index:99">
-<!------End Slider ------------>
+<img src="../img/banner2.jpg" alt="" class="banner">
+
 <nav class="navbar  navbar-default topadd">
 <div class="container">
     <div class="row">
@@ -107,8 +111,58 @@
                         <span class="icon-bar"></span>
                     </buttom>
                 </div>
-                <iframe src="left.html" frameborder="0" class="iframe2 col-lg-3 col-md-3 col-sm-3 col-xs-12" id="iframe2"></iframe>
-                <iframe  allowtransparency="true" src="ixxjj.html" frameborder="0" class="iframe3 col-lg-9 col-md-9 col-sm-9 col-xs-12" name="right" id="iframe3" scrolling="no"></iframe>
+                <!--选项-->
+                <ul id="myTab" class="nav nav-tabs col-md-3 col-sm-3 col-xs-12  xxgk">
+                    <li class="col-md-12 col-xs-12">学校概况</li>
+                    <li class="col-md-12 col-xs-12"><a href="#xxjj" data-toggle="tab">学校简介</a></li>
+                    <li class="col-md-12 col-xs-12"><a href="#jgsz" data-toggle="tab">机构设置</a></li>
+                    <li class="col-md-12 col-xs-12"><a href="#ldjs" data-toggle="tab">领导介绍</a></li>
+                    <li class="col-md-12 col-xs-12"><a href="#ryjl" data-toggle="tab">荣誉奖励</a></li>
+                    <li class="col-md-12 col-xs-12">
+                        <img src="../img/u273.png" alt="">
+                    </li>
+                </ul>
+                <!--内容，每一个tab-pane是一个独立的模块-->
+                <div id="myTabContent" class="tab-content col-md-9 col-xs-12">
+                    <div class="tab-pane fade in active" id="xxjj">
+                        <div class="row col-md-12">
+                            <p>当前位置: <a href="index.html" target="_parent">首页</a> <i class="fa fa-angle-double-right"></i><span>学校概况 <i class="fa fa-angle-double-right"></i></span><span>学校简介</span>
+                        </div>
+                        <section class="col-md-12">
+                            <div class="top">
+                                <p class="title">山西省运城市财经学校简介</p>
+                            </div>
+                            <div class="zhengwen">
+                                <p>学校概况学院南北校区占地面积共134亩，建筑面积6.5万平方米。学院南北校区占地面积共134亩，建筑面积6.5万平方米。建有综合办公大楼、教学大楼、实训大楼、400m标准化塑胶运动场等教学设施；拥有学生用高配置计算机530台，有现代化的校园网络系统、多媒体教室、语音室、多功能教室、导游实训室、ERP实验室、计算机组装维护实训室；美术设计专业拥有基础造型实训室、平面设计实训室、动画制作实训室、影视艺术工作室、环境艺术设计实训室等实训设施。图书馆新建馆舍500平方米，藏书12.5万余册，阅览室订有各类报刊、杂志400余种，并配有电子阅览室2个</p>
+                                <p>学校现有在编教职工245人，其中，专任教师159人，高级讲师 50人，讲师72人，双师型教师78人，研究生学历13人。学院有省级教学能手10人，省级骨干教师8人。该院教师主编、参编全国、省级出版社出版的著作260多部，在省级以上刊物发表的科研、学术论文600多篇。一大批中青年教师在参加教育部、省财政厅、省教育厅大中专院校思想政治研究会组织的“德育示范教学”、“课件设计制作”、“教案展评”、“试题库建设”等活动中屡屡获奖</p>
+                                <p>学校概况学院南北校区占地面积共134亩，建筑面积6.5万平方米。学院南北校区占地面积共134亩，建筑面积6.5万平方米。建有综合办公大楼、教学大楼、实训大楼、400m标准化塑胶运动场等教学设施；拥有学生用高配置计算机530台，有现代化的校园网络系统、多媒体教室、语音室、多功能教室、导游实训室、ERP实验室、计算机组装维护实训室；美术设计专业拥有基础造型实训室、平面设计实训室、动画制作实训室、影视艺术工作室、环境艺术设计实训室等实训设施。图书馆新建馆舍500平方米，藏书12.5万余册，阅览室订有各类报刊、杂志400余种，并配有电子阅览室2个</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="jgsz">
+                        <div class="row">
+                            <sapn>当前位置: <a href="index.html" target="_parent">首页</a> <i class="fa fa-angle-double-right"></i></sapn><span>学校概况  <i class="fa fa-angle-double-right"></i></span><span>机构设置</span>
+                        </div>
+                        <section>
+                            <div class="top">
+                                <p class="title">山西省运城市财经学校简介</p>
+                                <p>来源:<span>whdiha</span>作者<span>张三</span>时间<span>2018.3.12</span></p>
+                            </div>
+                            <div class="zhengwen">
+                                <p>
+                                    师资力量雄厚，教育体系完备。学校现有教职工近1700人，其中专任教师1089人，教授、副教授430人，具有博士学位教师374人。有国务院特殊津贴专家、教育部新世纪优秀人才、省级中青年学科学术带头人等54人，省级教学名师25人。此外，学校还聘请了120余名国内外知名专家学者担任客座或兼职教授，200余名校外研究机构的专家学者和著名企业家担任硕士研究生校外指导教师。学校具备培养学士、硕士、博士和博士后的完整教育体系。截止2017年6月30日，学校有本科生16948人，全日制硕士研究生2429人，非全日制硕士研究生1013人，博士研究生117人，继续教育学生10120人（其中：业余生1748人，函授生8372人），留学生（语言进修生）6人，折合在校生22187.1人。
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="ldjs">
+                        <p>领导介绍</p>
+                    </div>
+                    <div class="tab-pane fade" id="ryjl">
+                        <p>荣誉奖励
+                        </p>
+                    </div>
+                </div>
             </div>
 
     </div>
@@ -173,18 +227,13 @@
 </html>
 <script type="text/javascript">
     $(window).load(function() {
-        $('#slider').nivoSlider();
         $($('.navbar-toggle')[0]).click(function () {
             $('.nav-justified').fadeToggle("slow", "linear");
         });
         $($('.navbar-toggle')[1]).click(function () {
-            $('.iframe2').fadeToggle("slow", "linear");
+            $('.xxgk').fadeToggle("slow", "linear");
         });
-        $($('.navbar-inverse')[3]).css("backgroundColor",'#fff')
-        $('#iframe3').height($('#iframe3').contents().find("body").height()+20+'px')
-        $('#iframe3').load(function () {
-            var h = $('#iframe3').contents().find("body").height()+20+'px';
-        $('#iframe3').height(h)
-        })
+        $($('.navbar-inverse')[3]).css("backgroundColor",'#fff');
+        $('.navbar,.navbar-default,.topadd').eq(3).css("backgroundColor",'#fff');
     })
 </script>
